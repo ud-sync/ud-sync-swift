@@ -25,6 +25,14 @@ easier: [ud-sync-rails](https://github.com/ud-sync/ud-sync-rails)
 | Synchronize deletions | In an offline-first app, when DeviceA deleted a record, DeviceB needs to know about that when it comes online. UDSync help with that. |
 
 
+## Installation
+
+In your Podfile, use
+
+```ruby
+pod 'UDSync'
+```
+
 ## Usage
 
 ### Synchronize deletions
