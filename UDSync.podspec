@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary = 'Making backend synchronizations easier.'
   s.homepage = 'https://github.com/ud-sync/ud-sync-swift'
   s.authors = { 'Alexandre de Oliveira' => 'chavedomundo@gmail.com' }
-  s.source = { :git => 'https://github.com/ud-sync/ud-sync-swift.git', :tag => s.version }
+  s.source = { :git => 'https://github.com/ud-sync/ud-sync-swift.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
