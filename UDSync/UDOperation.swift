@@ -1,6 +1,4 @@
-import Foundation
-
-public class CDOperation {
+public class UDOperation {
 
     var operationHash: [String: AnyObject]
 
