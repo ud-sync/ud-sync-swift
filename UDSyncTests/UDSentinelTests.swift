@@ -3,7 +3,7 @@ import UDSync
 
 class CDSentinelSetup: XCTestCase {
 
-    var host = "https://ud-sync-test-server.herokuapp.com"
+    var host = "http://ud-sync-test-server.herokuapp.com"
     var endpoints: [String:String] = [
         "no-operations": "/ud_sync/operations?test=no-operations",
         "non-existent-endpoint": "/non_existent_endpoint"
