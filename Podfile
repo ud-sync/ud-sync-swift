@@ -1,8 +1,11 @@
-use_frameworks!
-platform :ios, '8.0'
-xcodeproj 'UDSync'
 source 'https://github.com/CocoaPods/Specs.git'
 
-pod 'Alamofire', '~> 3.0'
-pod 'BrightFutures'
-pod 'SwiftyJSON'
+use_frameworks!
+platform :ios, '8.0'
+project 'UDSync'
+
+target 'UDSync' do
+  pod 'Alamofire', '~> 3.1'
+  pod 'BrightFutures', '~> 3.3'
+  pod 'SwiftyJSON', '~> 2.3'
+end
