@@ -23,7 +23,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-    'Making backend synchronizations easier.'
+    Making backend synchronizations easier.
+                   DESC
+  s.summary  = <<-DESC
+    Making backend synchronizations easier.
                    DESC
 
   s.homepage = 'https://github.com/ud-sync/ud-sync-swift'
@@ -68,7 +71,7 @@ Pod::Spec.new do |s|
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
   s.ios.deployment_target = '8.0'
-  s.osx.deployment_target = '10.9'
+  s.osx.deployment_target = '10.10'
 
 
 
@@ -89,7 +92,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  #s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -132,7 +135,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency 'Alamofire', '~> 4'
-  s.dependency 'BrightFutures', '~> 5'
-  s.dependency 'SwiftyJSON', '~> 3'
+  s.dependency 'BrightFutures', '~> 5.1'
+  s.dependency 'SwiftyJSON', '~> 3.1'
 
 end

@@ -7,12 +7,12 @@ project 'UDSync' if respond_to?(:project)
 
 target 'UDSync' do
   pod 'Alamofire', '~> 4'
-  pod 'BrightFutures', '~> 5'
-  pod 'SwiftyJSON', '~> 3'
+  pod 'BrightFutures', '~> 5.1'
+  pod 'SwiftyJSON', '~> 3.1'
 end
 
 target 'UDSyncTests' do
   pod 'Alamofire', '~> 4'
-  pod 'BrightFutures', '~> 5'
-  pod 'SwiftyJSON', '~> 3'
+  pod 'BrightFutures', '~> 5.1'
+  pod 'SwiftyJSON', '~> 3.1'
 end
