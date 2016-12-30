@@ -1,4 +1,4 @@
-public class UDOperation {
+open class UDOperation {
 
     var operationHash: [String: AnyObject]
 
@@ -6,19 +6,19 @@ public class UDOperation {
         self.operationHash = operationHash
     }
 
-    public func isDelete() -> Bool {
+    open func isDelete() -> Bool {
         return self.operationName() == "delete"
     }
 
-    public func recordId() -> String {
+    open func recordId() -> String {
         return self.operationHash["record_id"] as! String
     }
 
-    public func entity() -> String {
+    open func entity() -> String {
         return self.operationHash["entity"] as! String
     }
 
-    public func operationName() -> String{
+    open func operationName() -> String{
         return self.operationHash["name"] as! String
     }
 }

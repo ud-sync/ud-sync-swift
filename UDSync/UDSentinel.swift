@@ -2,19 +2,19 @@ import BrightFutures
 import Alamofire
 import SwiftyJSON
 
-public class UDSentinel {
-    public static let sharedInstance = UDSentinel()
+open class UDSentinel {
+    open static let sharedInstance = UDSentinel()
 
-    private init() {}
+    fileprivate init() {}
 
     var processing = false
     var singletonPromise = Promise<Bool, NSError>()
 
-    public func fetchOperations(
-        host: String,
+    open func fetchOperations(
+        _ host: String,
         accessToken: String,
         endpoint: String = "/ud_sync/operations",
-        completion: ([UDOperation]) -> Void
+        completion: @escaping ([UDOperation]) -> Void
     ) {
 
         if self.processing == true {
@@ -23,7 +23,6 @@ public class UDSentinel {
         self.processing = true
 
         Alamofire.request(
-            .GET,
             "\(host)\(endpoint)",
             headers: ["Authorization": "Bearer \(accessToken)"]
         ).responseJSON { response in

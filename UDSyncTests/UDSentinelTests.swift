@@ -20,7 +20,7 @@ class CDSentinelSetup: XCTestCase {
 
 class CDSentinelTests: CDSentinelSetup {
     func testOperations() {
-        let expectation = expectationWithDescription("testOperations")
+        let expectation = self.expectation(description: "testOperations")
 
         UDSentinel.sharedInstance.fetchOperations(
             self.host,
@@ -43,13 +43,13 @@ class CDSentinelTests: CDSentinelSetup {
             expectation.fulfill()
         }
 
-        waitForExpectationsWithTimeout(10) { error in
+        waitForExpectations(timeout: 10) { error in
             XCTAssertNil(error, "\(error)")
         }
     }
 
     func testWhenNoOperationsRecordsExist() {
-        let expectation = expectationWithDescription("testWhenNoOperationsRecordsExist")
+        let expectation = self.expectation(description: "testWhenNoOperationsRecordsExist")
 
         UDSentinel.sharedInstance.fetchOperations(
             self.host,
@@ -61,14 +61,14 @@ class CDSentinelTests: CDSentinelSetup {
                 expectation.fulfill()
         }
 
-        waitForExpectationsWithTimeout(10) { error in
+        waitForExpectations(timeout: 10) { error in
             XCTAssertNil(error, "\(error)")
         }
 
     }
 
     func testWhenNoOperationsEndpointExist() {
-        let expectation = expectationWithDescription("testWhenNoOperationsEndpointExist")
+        let expectation = self.expectation(description: "testWhenNoOperationsEndpointExist")
 
         UDSentinel.sharedInstance.fetchOperations(
             host,
@@ -79,7 +79,7 @@ class CDSentinelTests: CDSentinelSetup {
             expectation.fulfill()
         }
 
-        waitForExpectationsWithTimeout(10) { error in
+        waitForExpectations(timeout: 10) { error in
             XCTAssertNil(error, "\(error)")
         }
     }

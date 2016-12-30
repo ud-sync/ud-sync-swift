@@ -14,6 +14,7 @@
 		29BBC65C1C62E20100427580 /* UDSentinel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BBC65A1C62E20100427580 /* UDSentinel.swift */; };
 		29BBC65F1C62E28F00427580 /* UDOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BBC65D1C62E28F00427580 /* UDOperationTests.swift */; };
 		29BBC6601C62E28F00427580 /* UDSentinelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BBC65E1C62E28F00427580 /* UDSentinelTests.swift */; };
+		9CBBF2946B6B6CDDBB84A506 /* Pods_UDSyncTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2E8670378384EA1FA3C479 /* Pods_UDSyncTests.framework */; };
 		C10FD0183AB358986AB616FE /* Pods_UDSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992587CB373369D72D5EC612 /* Pods_UDSync.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +41,10 @@
 		29BBC65E1C62E28F00427580 /* UDSentinelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDSentinelTests.swift; sourceTree = "<group>"; };
 		64B2F0ECCA409F9EB6224E49 /* Pods-UDSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDSync.release.xcconfig"; path = "Pods/Target Support Files/Pods-UDSync/Pods-UDSync.release.xcconfig"; sourceTree = "<group>"; };
 		992587CB373369D72D5EC612 /* Pods_UDSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UDSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2E8670378384EA1FA3C479 /* Pods_UDSyncTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UDSyncTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26DE9CBB1873822DD411955 /* Pods-UDSyncTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDSyncTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UDSyncTests/Pods-UDSyncTests.release.xcconfig"; sourceTree = "<group>"; };
 		E6EC8C3C6C1203A835EB0AD9 /* Pods-UDSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDSync.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UDSync/Pods-UDSync.debug.xcconfig"; sourceTree = "<group>"; };
+		FBAD117A05F0FB4397224FDC /* Pods-UDSyncTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDSyncTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UDSyncTests/Pods-UDSyncTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF805CA4832BC7B6E873BB97 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -58,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29BBC64A1C62E0FD00427580 /* UDSync.framework in Frameworks */,
+				9CBBF2946B6B6CDDBB84A506 /* Pods_UDSyncTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +74,8 @@
 			children = (
 				E6EC8C3C6C1203A835EB0AD9 /* Pods-UDSync.debug.xcconfig */,
 				64B2F0ECCA409F9EB6224E49 /* Pods-UDSync.release.xcconfig */,
+				FBAD117A05F0FB4397224FDC /* Pods-UDSyncTests.debug.xcconfig */,
+				B26DE9CBB1873822DD411955 /* Pods-UDSyncTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -120,6 +127,7 @@
 			children = (
 				FF805CA4832BC7B6E873BB97 /* Pods.framework */,
 				992587CB373369D72D5EC612 /* Pods_UDSync.framework */,
+				AE2E8670378384EA1FA3C479 /* Pods_UDSyncTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,12 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29BBC6531C62E0FD00427580 /* Build configuration list for PBXNativeTarget "UDSync" */;
 			buildPhases = (
-				D196DC18DBFFD3436998114C /* Check Pods Manifest.lock */,
+				D196DC18DBFFD3436998114C /* [CP] Check Pods Manifest.lock */,
 				29BBC63A1C62E0FD00427580 /* Sources */,
 				29BBC63B1C62E0FD00427580 /* Frameworks */,
 				29BBC63C1C62E0FD00427580 /* Headers */,
 				29BBC63D1C62E0FD00427580 /* Resources */,
-				CD87E4753FB6735F91C95D86 /* Copy Pods Resources */,
+				CD87E4753FB6735F91C95D86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29BBC6561C62E0FD00427580 /* Build configuration list for PBXNativeTarget "UDSyncTests" */;
 			buildPhases = (
+				B6D71DA5BF7E65F30418E5DF /* [CP] Check Pods Manifest.lock */,
 				29BBC6451C62E0FD00427580 /* Sources */,
 				29BBC6461C62E0FD00427580 /* Frameworks */,
 				29BBC6471C62E0FD00427580 /* Resources */,
+				D1C5D1DFE914FBB92F523EDF /* [CP] Embed Pods Frameworks */,
+				5602452314734FF69C310889 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,14 +194,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Alexandre Oliveira";
 				TargetAttributes = {
 					29BBC63E1C62E0FD00427580 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0820;
 					};
 					29BBC6481C62E0FD00427580 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -230,14 +243,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CD87E4753FB6735F91C95D86 /* Copy Pods Resources */ = {
+		5602452314734FF69C310889 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UDSyncTests/Pods-UDSyncTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6D71DA5BF7E65F30418E5DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD87E4753FB6735F91C95D86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,19 +288,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UDSync/Pods-UDSync-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D196DC18DBFFD3436998114C /* Check Pods Manifest.lock */ = {
+		D196DC18DBFFD3436998114C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1C5D1DFE914FBB92F523EDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UDSyncTests/Pods-UDSyncTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -306,8 +364,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -354,8 +414,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -375,6 +437,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -387,6 +450,7 @@
 			baseConfigurationReference = E6EC8C3C6C1203A835EB0AD9 /* Pods-UDSync.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -398,6 +462,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -406,6 +471,7 @@
 			baseConfigurationReference = 64B2F0ECCA409F9EB6224E49 /* Pods-UDSync.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -416,26 +482,31 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ado.UDSync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		29BBC6571C62E0FD00427580 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBAD117A05F0FB4397224FDC /* Pods-UDSyncTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = UDSyncTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ado.UDSyncTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		29BBC6581C62E0FD00427580 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B26DE9CBB1873822DD411955 /* Pods-UDSyncTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = UDSyncTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ado.UDSyncTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

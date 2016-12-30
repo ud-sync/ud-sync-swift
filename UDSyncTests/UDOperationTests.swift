@@ -22,15 +22,15 @@ class UDOperationSetup: XCTestCase {
 
 class UDOperationTests: UDOperationSetup {
     func testIsDelete() {
-        XCTAssertTrue(UDOperation(operationHash:  ["name": "delete"]).isDelete())
-        XCTAssertFalse(UDOperation(operationHash: ["name": "save"]).isDelete())
+        XCTAssertTrue(UDOperation(operationHash:  ["name": "delete" as AnyObject]).isDelete())
+        XCTAssertFalse(UDOperation(operationHash: ["name": "save" as AnyObject]).isDelete())
     }
 
     func testRecordId() {
-        XCTAssertEqual("1234", UDOperation(operationHash: standardOperation).recordId())
+        XCTAssertEqual("1234", UDOperation(operationHash: standardOperation as [String : AnyObject]).recordId())
     }
 
     func testEntity() {
-        XCTAssertEqual("User", UDOperation(operationHash: standardOperation).entity())
+        XCTAssertEqual("User", UDOperation(operationHash: standardOperation as [String : AnyObject] ).entity())
     }
 }
