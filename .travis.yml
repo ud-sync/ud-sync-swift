@@ -5,5 +5,6 @@ xcode_scheme: UDSync
 xcode_sdk: iphonesimulator10.2
 
 # add once cocoapods go v1
-#before_script:
+before_install:
+  - pod repo update
 #  - pod spec lint UDSync.podspec --verbose
